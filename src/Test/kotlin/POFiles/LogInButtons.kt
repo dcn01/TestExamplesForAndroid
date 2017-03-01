@@ -14,13 +14,13 @@ class LogInButtons(driver: AppiumDriver<WebElement>): Config() {
     }
 
     @FindBy(xpath = "//android.widget.EditText[@resource-id='com.twitter.android:id/login_identifier']")
-    lateinit var logIn: WebElement
+    private lateinit var logIn: WebElement
     @FindBy(xpath = "//android.widget.EditText[@resource-id='com.twitter.android:id/login_password']")
-    lateinit var pwd: WebElement
+    private lateinit var pwd: WebElement
     @FindBy(xpath = "//android.widget.Button[@resource-id='com.twitter.android:id/login_login']")
-    lateinit var logInButton: WebElement
+    private lateinit var logInButton: WebElement
     @FindBy(xpath = "//android.widget.TextView[@resource-id='com.twitter.android:id/header_title']")
-    lateinit var logInMsg: WebElement
+    private lateinit var logInMsg: WebElement
 
 
     fun logInEnter(){

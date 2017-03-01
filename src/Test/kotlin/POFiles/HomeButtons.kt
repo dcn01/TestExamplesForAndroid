@@ -13,9 +13,9 @@ class HomeButtons(driver: AppiumDriver<WebElement>): Config() {
     }
 
     @FindBy(xpath = "//android.view.View[@resource-id='com.twitter.android:id/drawer_icon']")
-    lateinit var usersIcon: WebElement
+    private lateinit var usersIcon: WebElement
     @FindBy(xpath = "//android.view.View[@content-desc='Selected. Home Tab']")
-    lateinit var homeTabSelected: WebElement
+    private lateinit var homeTabSelected: WebElement
 
 
     fun iconIsPresent(){
