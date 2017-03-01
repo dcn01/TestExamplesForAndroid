@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <test name="Test-class 1">
+        <parameter name="test-name" value="test-method One" />
+        <classes>
+            <class name="TwitterCorrectLogIn"/>
+        </classes>
+    </test>
+    <test name="Test-class 2">
+        <parameter name="test-name" value="test-method Two" />
+        <classes>
+            <class name="TwitterLogOut"/>
+        </classes>
+    </test>
+</suite>
